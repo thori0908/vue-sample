@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/thori0908/vue-sample/issues"
   },
-  "homepage": "https://github.com/thori0908/vue-sample#readme"
+  "homepage": "https://github.com/thori0908/vue-sample#readme",
+  "devDependencies": {
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  }
 }
