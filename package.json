@@ -31,5 +31,11 @@
   },
   "dependencies": {
     "vue": "^2.6.10"
-  }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": "last 2 versions, not dead, not ie > 0"
 }
