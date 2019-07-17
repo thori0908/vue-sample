@@ -1,16 +1,11 @@
-import Vue from 'vue'
+import Vue from "vue";
+import { components } from "./components";
 
-import App from './components/App'
-import AppDecorator from "./components/AppDecorator"
+document.addEventListener("DOMContentLoaded", () => {
+  let templates = document.querySelectorAll("[data-vue]");
 
-new Vue({
-  el: '#app-decorator',
-  components: { AppDecorator },
-  template: '<app-decorator :name="name" :initialEnthusiasm="5"/>'
-})
-
-new Vue({
-  el: '#app',
-  components: { App },
-  template: '<app/>'
-})
+  for (let el of templates) {
+    let app = new Vue(components[el.dataset.vue]);
+    app.$mount(el);
+  }
+});
